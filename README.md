@@ -21,7 +21,8 @@
 |---|---|
 | RimWorld | 1.6 |
 | [Harmony](https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077) | обязательно |
-| [Multiplayer](https://steamcommunity.com/sharedfiles/filedetails/?id=2606448745) | для онлайна; без него работают только исправления рассинхрона |
+| Multiplayer и Multiplayer Compatibility | уже в архиве, отдельно ставить не нужно |
+| Prepatcher, HugsLib | входят в сборку Hardcore SK |
 
 Для входа в онлайн нужен сервер авторизации HSK Online. В сборке адрес по умолчанию —
 `http://127.0.0.1:5080`, то есть локальный; поменять можно в настройках мода.
@@ -66,7 +67,8 @@ synced separately.
 |---|---|
 | RimWorld | 1.6 |
 | [Harmony](https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077) | required |
-| [Multiplayer](https://steamcommunity.com/sharedfiles/filedetails/?id=2606448745) | for the online part; without it only the desync fixes apply |
+| Multiplayer and Multiplayer Compatibility | already in the archive, no separate install |
+| Prepatcher, HugsLib | come with the Hardcore SK pack |
 
 Signing in needs an HSK Online authentication server. The shipped default is
 `http://127.0.0.1:5080`, i.e. local — change it in the mod settings.
