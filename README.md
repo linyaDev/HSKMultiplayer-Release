@@ -55,19 +55,6 @@
 Если после этого лобби пишет, что моды не совпали, — оно и показывает, какие именно: `missing`,
 `extra`, `different`, `switched`.
 
-## Что это такое
-
-Онлайн-слой для Hardcore SK: своё меню входа, лобби со списком игроков и выбором роли. Хост создаёт
-мир и держит сервер, наёмник приходит в уже начатый тремя своими пешками.
-
-- **К хосту за NAT можно зайти.** Если у хоста закрыт порт — а за домашним роутером он закрыт
-  почти всегда, — трафик идёт через наш сервер. Настраивать ничего не нужно.
-- **Жетоны.** Игра своей колонией приносит жетоны наёмника, служба наёмником — жетоны колониста.
-  Колония стоит жетонов колониста, но пока колоний мало, старт бесплатный.
-- **Рассинхроны.** Мод чинит то, из-за чего игра вдвоём на HSK разъезжалась при входе: фоновым
-  потокам выдаётся свой поток случайных чисел, случайность отрисовки и звуков отделена от
-  симуляции, а действия Combat Extended и CE Quick Loadout синхронизируются — в MP Compat их нет.
-
 ## Что нужно
 
 | | |
@@ -75,7 +62,6 @@
 | RimWorld | 1.6 + Royalty, Ideology, Biotech, Anomaly, Odyssey |
 | Multiplayer и Multiplayer Compatibility | уже в архиве, отдельно ставить не нужно |
 | Prepatcher, HugsLib, Harmony | входят в сборку Hardcore SK |
-| Сервер входа | адрес уже вшит в сборку; при необходимости меняется в настройках мода |
 
 ## Лицензия
 
@@ -140,20 +126,6 @@ already built into the mod and the launcher.
 If the lobby then says the mods do not match, it also says which ones: `missing`, `extra`,
 `different`, `switched`.
 
-## What it is
-
-An online layer for the Hardcore SK modpack: its own sign-in window and a lobby that lists who is
-online and offers a role. A host makes the world and runs the server; a mercenary walks into one
-already under way with three pawns of their own.
-
-- **A host behind NAT is reachable.** If the host's port is closed - and behind a home router it
-  almost always is - the traffic goes through our server. Nothing to configure.
-- **Tokens.** Playing your own colony earns mercenary tokens; serving as a mercenary earns colonist
-  tokens. A colony costs colonist tokens, but while there are few colonies the start is free.
-- **Desyncs.** The mod fixes what pulled a two-player HSK session apart on join: background threads
-  get their own stream of random numbers, rendering and sound randomness is kept out of the
-  simulation, and Combat Extended and CE Quick Loadout actions are synced - MP Compat covers neither.
-
 ## Requirements
 
 | | |
@@ -161,7 +133,6 @@ already under way with three pawns of their own.
 | RimWorld | 1.6 + Royalty, Ideology, Biotech, Anomaly, Odyssey |
 | Multiplayer and Multiplayer Compatibility | already in the archive, no separate install |
 | Prepatcher, HugsLib, Harmony | come with the Hardcore SK pack |
-| Sign-in server | its address ships with the build; changeable in the mod settings |
 
 ## License
 
