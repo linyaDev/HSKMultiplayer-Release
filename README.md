@@ -34,7 +34,8 @@
 ## Установка вручную
 
 Так тоже можно, но набор обязан совпасть с эталоном сервера до файла, поэтому порядок строгий.
-Актуальные коммиты и теги всегда лежат в манифесте: `GET http://31.76.16.129:5080/pack`.
+Актуальные коммиты и теги лежат в манифесте сборки — сервер отдаёт его по пути `/pack`, а его адрес
+уже прописан в моде и в лаунчере.
 
 1. **Игра.** RimWorld **1.6** и пять DLC: Royalty, Ideology, Biotech, Anomaly, Odyssey.
    Сделайте копию папки игры — ставить сборку в Steam-установку не стоит.
@@ -74,7 +75,7 @@
 | RimWorld | 1.6 + Royalty, Ideology, Biotech, Anomaly, Odyssey |
 | Multiplayer и Multiplayer Compatibility | уже в архиве, отдельно ставить не нужно |
 | Prepatcher, HugsLib, Harmony | входят в сборку Hardcore SK |
-| Сервер входа | адрес по умолчанию `http://31.76.16.129:5080`, меняется в настройках мода |
+| Сервер входа | адрес уже вшит в сборку; при необходимости меняется в настройках мода |
 
 ## Лицензия
 
@@ -118,7 +119,8 @@ the server's manifest, so everyone ends up with the same set.
 ## Installing by hand
 
 Possible, but the set has to match the server's reference exactly, so the order matters. The current
-commits and tags are always in the manifest: `GET http://31.76.16.129:5080/pack`.
+commits and tags live in the pack manifest, which the server serves at `/pack`; its address is
+already built into the mod and the launcher.
 
 1. **The game.** RimWorld **1.6** with all five DLCs: Royalty, Ideology, Biotech, Anomaly, Odyssey.
    Copy the game folder — do not install the pack over your Steam copy.
@@ -159,7 +161,7 @@ already under way with three pawns of their own.
 | RimWorld | 1.6 + Royalty, Ideology, Biotech, Anomaly, Odyssey |
 | Multiplayer and Multiplayer Compatibility | already in the archive, no separate install |
 | Prepatcher, HugsLib, Harmony | come with the Hardcore SK pack |
-| Sign-in server | default `http://31.76.16.129:5080`, changeable in the mod settings |
+| Sign-in server | its address ships with the build; changeable in the mod settings |
 
 ## License
 
