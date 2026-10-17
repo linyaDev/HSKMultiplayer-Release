@@ -1,40 +1,80 @@
 # HSK Multiplayer — релизы
 
-Здесь лежат только собранные версии мода. Исходники не публикуются.
+Здесь лежат только собранные версии: сборка мода (теги `v*`) и лаунчер (теги `launcher-*`).
+Исходники не публикуются.
 
-**Скачать:** вкладка [Releases](../../releases) — берите архив из самого верхнего выпуска.
+## Установка: лаунчер
 
-## Что это
+**[Скачать лаунчер — HSKLauncher-0.2.0.zip](../../releases/download/launcher-v0.2.0/HSKLauncher-0.2.0.zip)**
 
-Онлайн-слой для сборки Hardcore SK: своё меню входа, лобби со списком игроков и выбором роли —
-хост создаёт мир и держит сервер, наёмник приходит в уже начатый.
+Нужен [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime) — без него
+не запустится. Дальше:
 
-Вместе с этим мод чинит рассинхрон, из-за которого игра вдвоём на HSK разъезжалась при входе
-в сессию: `Verse.Rand` держит состояние в статических полях, и фоновый поток, который грузит карту,
-тратил числа из того же потока, которым главный считает симуляцию. Фоновым потокам выдаётся свой
-поток чисел, главный не затронут. Отдельно синхронизируются действия `CE Quick Loadout`, которых нет
-в MP Compat.
+1. Распакуйте архив в любую свою папку (пять файлов рядом) и запустите `HSKLauncher.exe`.
+2. Укажите установленный RimWorld — лаунчер проверит версию и наличие DLC.
+3. Нажмите установку и дождитесь конца. После этого играйте **только через лаунчер**.
+
+Что он делает: копирует игру в отдельную папку, ставит туда Hardcore SK по закреплённому коммиту,
+аддоны по их коммитам и наш `HSKMultiplayer` из последнего релиза, пишет порядок модов и запускает
+игру со своей папкой сохранений.
+
+**Вашу установку Steam он не трогает.** Её можно обновлять и играть в ваниль как раньше — сборка
+живёт отдельной копией.
+
+Обновления лаунчер ставит сам: раз в пять минут спрашивает сервер, есть ли версия новее, и
+предлагает обновиться. Обновления сборки — тоже он, кнопкой.
+
+## Зачем лаунчер вообще нужен
+
+Сервер сверяет набор модов побайтово и не пустит в онлайн того, у кого он отличается хоть одним
+файлом. Официальный лаунчер HSK всегда тянет последний коммит, поэтому двое игроков, обновившихся
+с разницей в час, получают разные файлы и вместе играть уже не смогут. Наш ставит **закреплённые
+коммиты** из манифеста сервера — у всех выходит один и тот же набор.
+
+## Установка вручную
+
+Так тоже можно, но набор обязан совпасть с эталоном сервера до файла, поэтому порядок строгий.
+Актуальные коммиты и теги всегда лежат в манифесте: `GET http://31.76.16.129:5080/pack`.
+
+1. **Игра.** RimWorld **1.6** и пять DLC: Royalty, Ideology, Biotech, Anomaly, Odyssey.
+   Сделайте копию папки игры — ставить сборку в Steam-установку не стоит.
+2. **Сборка Hardcore SK.** Скачайте архив репозитория по SHA из манифеста
+   (`https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/<sha>`) и положите **только** содержимое
+   его папки `Mods` в `Mods` вашей копии.
+3. **Аддоны.** Каждый из списка `addons` манифеста — своим архивом по своему SHA; из архива берётся
+   только папка самого мода.
+4. **Наш мод.** Возьмите архив из верхнего релиза с тегом `v*` и распакуйте так, чтобы папка
+   `HSKMultiplayer` оказалась в `Mods`. В том же архиве едут ещё семь папок, которых нет в сборке, —
+   `Multiplayer`, `Multiplayer-Compatibility`, `RimHUD`, `EPrimeReadouts`, `MAZ-UI`, `QualColor`,
+   `TraitRarityColors`: их тоже нужно положить рядом.
+5. **Порядок модов.** Возьмите `ModsConfig.xml` из репозитория сборки (того же коммита), допишите в
+   конец аддоны и `linya.hskmultiplayer`, положите в папку настроек игры.
+6. **Запуск** с отдельной папкой сохранений: `RimWorldWin64.exe -savedatafolder=SaveData`.
+
+Если после этого лобби пишет, что моды не совпали, — оно и показывает, какие именно: `missing`,
+`extra`, `different`, `switched`.
+
+## Что это такое
+
+Онлайн-слой для Hardcore SK: своё меню входа, лобби со списком игроков и выбором роли. Хост создаёт
+мир и держит сервер, наёмник приходит в уже начатый тремя своими пешками.
+
+- **К хосту за NAT можно зайти.** Если у хоста закрыт порт — а за домашним роутером он закрыт
+  почти всегда, — трафик идёт через наш сервер. Настраивать ничего не нужно.
+- **Жетоны.** Игра своей колонией приносит жетоны наёмника, служба наёмником — жетоны колониста.
+  Колония стоит жетонов колониста, но пока колоний мало, старт бесплатный.
+- **Рассинхроны.** Мод чинит то, из-за чего игра вдвоём на HSK разъезжалась при входе: фоновым
+  потокам выдаётся свой поток случайных чисел, случайность отрисовки и звуков отделена от
+  симуляции, а действия Combat Extended и CE Quick Loadout синхронизируются — в MP Compat их нет.
 
 ## Что нужно
 
 | | |
 |---|---|
-| RimWorld | 1.6 |
-| [Harmony](https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077) | обязательно |
+| RimWorld | 1.6 + Royalty, Ideology, Biotech, Anomaly, Odyssey |
 | Multiplayer и Multiplayer Compatibility | уже в архиве, отдельно ставить не нужно |
-| Prepatcher, HugsLib | входят в сборку Hardcore SK |
-
-Для входа в онлайн нужен сервер авторизации HSK Online. В сборке адрес по умолчанию —
-`http://127.0.0.1:5080`, то есть локальный; поменять можно в настройках мода.
-
-## Установка
-
-1. Скачайте архив из [Releases](../../releases).
-2. Распакуйте так, чтобы папка `HSKMultiplayer` оказалась в `RimWorld/Mods`.
-3. Включите мод в списке и перезапустите игру.
-
-**У всех игроков должен стоять одинаковый набор модов.** Сервер сверяет хеши и не пустит в онлайн
-того, у кого набор отличается.
+| Prepatcher, HugsLib, Harmony | входят в сборку Hardcore SK |
+| Сервер входа | адрес по умолчанию `http://31.76.16.129:5080`, меняется в настройках мода |
 
 ## Лицензия
 
@@ -45,42 +85,81 @@
 
 # HSK Multiplayer — releases
 
-Built versions only. The source is not published here.
+Built versions only: the mod bundle (`v*` tags) and the launcher (`launcher-*` tags). The source is
+not published here.
 
-**Download:** the [Releases](../../releases) tab — take the archive from the topmost entry.
+## Install: the launcher
+
+**[Download the launcher — HSKLauncher-0.2.0.zip](../../releases/download/launcher-v0.2.0/HSKLauncher-0.2.0.zip)**
+
+It needs the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime).
+Then:
+
+1. Unpack the archive anywhere (five files side by side) and run `HSKLauncher.exe`.
+2. Point it at your RimWorld install — it checks the version and the DLCs.
+3. Press install and wait. From then on, play through the launcher.
+
+What it does: copies the game into a folder of its own, installs Hardcore SK at a pinned commit, the
+add-ons at their pinned commits and our `HSKMultiplayer` from the latest release, writes the mod
+order and starts the game with its own save folder.
+
+**Your Steam install is left alone** — the pack lives in a separate copy.
+
+The launcher updates itself: every five minutes it asks the server whether a newer version exists
+and offers to update. Pack updates are a button in the same window.
+
+## Why a launcher at all
+
+The server compares mod sets byte for byte and refuses anyone whose set differs by a single file.
+The official HSK launcher always pulls the latest commit, so two players who update an hour apart
+end up with different files and can no longer play together. Ours installs **pinned commits** from
+the server's manifest, so everyone ends up with the same set.
+
+## Installing by hand
+
+Possible, but the set has to match the server's reference exactly, so the order matters. The current
+commits and tags are always in the manifest: `GET http://31.76.16.129:5080/pack`.
+
+1. **The game.** RimWorld **1.6** with all five DLCs: Royalty, Ideology, Biotech, Anomaly, Odyssey.
+   Copy the game folder — do not install the pack over your Steam copy.
+2. **The Hardcore SK pack.** Download the repository archive at the SHA from the manifest
+   (`https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/<sha>`) and put **only** the contents of
+   its `Mods` folder into your copy's `Mods`.
+3. **Add-ons.** Each entry of the manifest's `addons`, from its own archive at its own SHA; take only
+   that mod's folder out of each.
+4. **This mod.** Take the archive from the topmost `v*` release and unpack it so that
+   `HSKMultiplayer` lands in `Mods`. The same archive carries seven more folders the pack does not
+   include — `Multiplayer`, `Multiplayer-Compatibility`, `RimHUD`, `EPrimeReadouts`, `MAZ-UI`,
+   `QualColor`, `TraitRarityColors` — those go in beside it.
+5. **Mod order.** Take `ModsConfig.xml` from the pack repository at the same commit, append the
+   add-ons and `linya.hskmultiplayer`, and put it in the game's config folder.
+6. **Run** with a save folder of its own: `RimWorldWin64.exe -savedatafolder=SaveData`.
+
+If the lobby then says the mods do not match, it also says which ones: `missing`, `extra`,
+`different`, `switched`.
 
 ## What it is
 
 An online layer for the Hardcore SK modpack: its own sign-in window and a lobby that lists who is
-online and offers a role — a host makes the world and runs the server, a mercenary walks into one
-already under way.
+online and offers a role. A host makes the world and runs the server; a mercenary walks into one
+already under way with three pawns of their own.
 
-It also fixes the desync that pulled a two-player HSK session apart on join. `Verse.Rand` keeps its
-state in static fields, so the background thread that loads the map was spending numbers from the
-same stream the main thread runs the simulation on. Background threads now get their own stream and
-the main thread is untouched. `CE Quick Loadout`'s actions, which MP Compat does not cover, are
-synced separately.
+- **A host behind NAT is reachable.** If the host's port is closed - and behind a home router it
+  almost always is - the traffic goes through our server. Nothing to configure.
+- **Tokens.** Playing your own colony earns mercenary tokens; serving as a mercenary earns colonist
+  tokens. A colony costs colonist tokens, but while there are few colonies the start is free.
+- **Desyncs.** The mod fixes what pulled a two-player HSK session apart on join: background threads
+  get their own stream of random numbers, rendering and sound randomness is kept out of the
+  simulation, and Combat Extended and CE Quick Loadout actions are synced - MP Compat covers neither.
 
 ## Requirements
 
 | | |
 |---|---|
-| RimWorld | 1.6 |
-| [Harmony](https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077) | required |
+| RimWorld | 1.6 + Royalty, Ideology, Biotech, Anomaly, Odyssey |
 | Multiplayer and Multiplayer Compatibility | already in the archive, no separate install |
-| Prepatcher, HugsLib | come with the Hardcore SK pack |
-
-Signing in needs an HSK Online authentication server. The shipped default is
-`http://127.0.0.1:5080`, i.e. local — change it in the mod settings.
-
-## Installing
-
-1. Download the archive from [Releases](../../releases).
-2. Unpack it so that the `HSKMultiplayer` folder lands in `RimWorld/Mods`.
-3. Enable the mod in the list and restart the game.
-
-**Every player needs the same set of mods.** The server compares hashes and refuses online access to
-anyone whose set differs.
+| Prepatcher, HugsLib, Harmony | come with the Hardcore SK pack |
+| Sign-in server | default `http://31.76.16.129:5080`, changeable in the mod settings |
 
 ## License
 
