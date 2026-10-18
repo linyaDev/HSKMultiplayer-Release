@@ -42,15 +42,13 @@
 2. **Сборка Hardcore SK.** Скачайте архив репозитория по SHA из манифеста
    (`https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/<sha>`) и положите **только** содержимое
    его папки `Mods` в `Mods` вашей копии.
-3. **Аддоны.** Каждый из списка `addons` манифеста — своим архивом по своему SHA; из архива берётся
-   только папка самого мода.
-4. **Наш мод.** Возьмите архив из верхнего релиза с тегом `v*` и распакуйте так, чтобы папка
+3. **Наш мод.** Возьмите архив из верхнего релиза с тегом `v*` и распакуйте так, чтобы папка
    `HSKMultiplayer` оказалась в `Mods`. В том же архиве едут ещё семь папок, которых нет в сборке, —
    `Multiplayer`, `Multiplayer-Compatibility`, `RimHUD`, `EPrimeReadouts`, `MAZ-UI`, `QualColor`,
    `TraitRarityColors`: их тоже нужно положить рядом.
-5. **Порядок модов.** Возьмите `ModsConfig.xml` из репозитория сборки (того же коммита), допишите в
+4. **Порядок модов.** Возьмите `ModsConfig.xml` из репозитория сборки (того же коммита), допишите в
    конец аддоны и `linya.hskmultiplayer`, положите в папку настроек игры.
-6. **Запуск** с отдельной папкой сохранений: `RimWorldWin64.exe -savedatafolder=SaveData`.
+5. **Запуск** с отдельной папкой сохранений: `RimWorldWin64.exe -savedatafolder=SaveData`.
 
 Если после этого лобби пишет, что моды не совпали, — оно и показывает, какие именно: `missing`,
 `extra`, `different`, `switched`.
@@ -113,15 +111,13 @@ already built into the mod and the launcher.
 2. **The Hardcore SK pack.** Download the repository archive at the SHA from the manifest
    (`https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/<sha>`) and put **only** the contents of
    its `Mods` folder into your copy's `Mods`.
-3. **Add-ons.** Each entry of the manifest's `addons`, from its own archive at its own SHA; take only
-   that mod's folder out of each.
-4. **This mod.** Take the archive from the topmost `v*` release and unpack it so that
+3. **This mod.** Take the archive from the topmost `v*` release and unpack it so that
    `HSKMultiplayer` lands in `Mods`. The same archive carries seven more folders the pack does not
    include — `Multiplayer`, `Multiplayer-Compatibility`, `RimHUD`, `EPrimeReadouts`, `MAZ-UI`,
    `QualColor`, `TraitRarityColors` — those go in beside it.
-5. **Mod order.** Take `ModsConfig.xml` from the pack repository at the same commit, append the
+4. **Mod order.** Take `ModsConfig.xml` from the pack repository at the same commit, append the
    add-ons and `linya.hskmultiplayer`, and put it in the game's config folder.
-6. **Run** with a save folder of its own: `RimWorldWin64.exe -savedatafolder=SaveData`.
+5. **Run** with a save folder of its own: `RimWorldWin64.exe -savedatafolder=SaveData`.
 
 If the lobby then says the mods do not match, it also says which ones: `missing`, `extra`,
 `different`, `switched`.
