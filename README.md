@@ -46,8 +46,9 @@
    `HSKMultiplayer` оказалась в `Mods`. В том же архиве едут ещё семь папок, которых нет в сборке, —
    `Multiplayer`, `Multiplayer-Compatibility`, `RimHUD`, `EPrimeReadouts`, `MAZ-UI`, `QualColor`,
    `TraitRarityColors`: их тоже нужно положить рядом.
-4. **Порядок модов.** Возьмите `ModsConfig.xml` из репозитория сборки (того же коммита), допишите в
-   конец аддоны и `linya.hskmultiplayer`, положите в папку настроек игры.
+4. **Порядок модов.** `ModsConfig.xml` уже лежит готовым прямо в архиве этого мода
+   (`HSKMultiplayer/ModsConfig.xml`) — это полный список: сборка, аддоны и сам мод, уже в нужном
+   порядке. Просто скопируйте его в папку настроек игры — дописывать ничего не нужно.
 5. **Запуск** с отдельной папкой сохранений: `RimWorldWin64.exe -savedatafolder=SaveData`.
 
 Если после этого лобби пишет, что моды не совпали, — оно и показывает, какие именно: `missing`,
@@ -115,8 +116,9 @@ already built into the mod and the launcher.
    `HSKMultiplayer` lands in `Mods`. The same archive carries seven more folders the pack does not
    include — `Multiplayer`, `Multiplayer-Compatibility`, `RimHUD`, `EPrimeReadouts`, `MAZ-UI`,
    `QualColor`, `TraitRarityColors` — those go in beside it.
-4. **Mod order.** Take `ModsConfig.xml` from the pack repository at the same commit, append the
-   add-ons and `linya.hskmultiplayer`, and put it in the game's config folder.
+4. **Mod order.** `ModsConfig.xml` already comes ready-made inside this mod's own archive
+   (`HSKMultiplayer/ModsConfig.xml`) — the full list: pack, add-ons and this mod, already in the
+   right order. Just copy it into the game's config folder - nothing to append.
 5. **Run** with a save folder of its own: `RimWorldWin64.exe -savedatafolder=SaveData`.
 
 If the lobby then says the mods do not match, it also says which ones: `missing`, `extra`,
