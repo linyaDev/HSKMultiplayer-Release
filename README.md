@@ -2,7 +2,7 @@
 
 ## Установка: лаунчер
 
-**[Скачать лаунчер](../../releases/latest)** — всегда самый свежий.
+**[Скачать лаунчер](../../releases/latest)**
 
 Нужен [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime) — без него
 не запустится. Дальше:
@@ -55,7 +55,7 @@
 
 ## Install: the launcher
 
-**[Download the launcher](../../releases/latest)** — always the newest one.
+**[Download the launcher](../../releases/latest)**
 
 It needs the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime).
 Then:
