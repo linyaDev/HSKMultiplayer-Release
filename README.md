@@ -5,12 +5,14 @@
 
 ## Установка: лаунчер
 
-**[Скачать лаунчер — HSKLauncher-0.2.0.zip](../../releases/download/launcher-v0.2.0/HSKLauncher-0.2.0.zip)**
+**[Самый свежий релиз лаунчера](../../releases?q=launcher-&expanded=true)** — тег `launcher-*`,
+самый верхний в списке. Ссылка на конкретный файл здесь не висит специально: номер версии меняется
+с каждым релизом, и зашитая в README ссылка на старую версию быстро устаревает — это уже случалось.
 
 Нужен [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime) — без него
 не запустится. Дальше:
 
-1. Распакуйте архив в любую свою папку (пять файлов рядом) и запустите `HSKLauncher.exe`.
+1. Распакуйте архив в любую свою папку (пять файлов рядом) и запустите `HSKOnlineLauncher.exe`.
 2. Укажите установленный RimWorld — лаунчер проверит версию и наличие DLC.
 3. Нажмите установку и дождитесь конца. После этого играйте **только через лаунчер**.
 
@@ -76,12 +78,14 @@ not published here.
 
 ## Install: the launcher
 
-**[Download the launcher — HSKLauncher-0.2.0.zip](../../releases/download/launcher-v0.2.0/HSKLauncher-0.2.0.zip)**
+**[Latest launcher release](../../releases?q=launcher-&expanded=true)** — `launcher-*` tag, the one
+at the top. No direct link to a specific file on purpose: the version number changes with every
+release, and a link to an old version baked into this README goes stale fast - it already has.
 
 It needs the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime).
 Then:
 
-1. Unpack the archive anywhere (five files side by side) and run `HSKLauncher.exe`.
+1. Unpack the archive anywhere (five files side by side) and run `HSKOnlineLauncher.exe`.
 2. Point it at your RimWorld install — it checks the version and the DLCs.
 3. Press install and wait. From then on, play through the launcher.
 
