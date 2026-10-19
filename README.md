@@ -46,8 +46,8 @@
 
 ## Лицензия
 
-Все права защищены, см. [LICENSE](LICENSE). Пользоваться можно; перезаливать, распространять,
-включать в сборки и публиковать производные — только с разрешения автора.
+Все права защищены, см. [LICENSE](LICENSE). Пользоваться можно; изменять, перезаливать,
+распространять, включать в сборки и публиковать производные — только с разрешения автора.
 
 ---
 
@@ -98,5 +98,5 @@ If the lobby then says the mods do not match, it also says which ones: `missing`
 
 ## License
 
-All rights reserved, see [LICENSE](LICENSE). Use is fine; re-uploading, redistributing, bundling it
-or publishing derivatives needs the author's permission.
+All rights reserved, see [LICENSE](LICENSE). Use is fine; modifying, re-uploading, redistributing,
+bundling it or publishing derivatives needs the author's permission.
