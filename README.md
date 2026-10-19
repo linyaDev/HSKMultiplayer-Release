@@ -25,9 +25,11 @@
 
 1. **Игра.** RimWorld **1.6** и пять DLC: Royalty, Ideology, Biotech, Anomaly, Odyssey.
    Рекомендуем сделать копию папки игры, а не ставить сборку поверх своей Steam-установки.
-2. **Сборка Hardcore SK.** Скачайте архив репозитория по SHA из манифеста
-   (`https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/<sha>`) и положите **только** содержимое
-   его папки `Mods` в `Mods` вашей копии.
+2. **Сборка Hardcore SK.** Текущий SHA — в поле `pack.sha` по адресу
+   [31.76.16.129:5080/pack](http://31.76.16.129:5080/pack) (он меняется, поэтому ссылка —
+   на сам манифест, а не на конкретную версию). Скачайте архив репозитория по этому SHA
+   (`https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/<sha>`) и положите **только**
+   содержимое его папки `Mods` в `Mods` вашей копии.
 3. **Наш мод.** Возьмите архив из верхнего релиза с тегом `v*` и распакуйте так, чтобы папка
    `HSKMultiplayer` оказалась в `Mods`. В том же архиве едут ещё семь папок, которых нет в сборке, —
    `Multiplayer`, `Multiplayer-Compatibility`, `RimHUD`, `EPrimeReadouts`, `MAZ-UI`, `QualColor`,
@@ -73,9 +75,11 @@ update. Pack updates are a button in the same window.
 
 1. **The game.** RimWorld **1.6** with all five DLCs: Royalty, Ideology, Biotech, Anomaly, Odyssey.
    We recommend copying the game folder rather than installing the pack over your Steam copy.
-2. **The Hardcore SK pack.** Download the repository archive at the SHA from the manifest
-   (`https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/<sha>`) and put **only** the contents of
-   its `Mods` folder into your copy's `Mods`.
+2. **The Hardcore SK pack.** The current SHA is in the `pack.sha` field at
+   [31.76.16.129:5080/pack](http://31.76.16.129:5080/pack) (it changes, so this links to the
+   manifest itself, not a pinned version). Download the repository archive at that SHA
+   (`https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/<sha>`) and put **only** the
+   contents of its `Mods` folder into your copy's `Mods`.
 3. **This mod.** Take the archive from the topmost `v*` release and unpack it so that
    `HSKMultiplayer` lands in `Mods`. The same archive carries seven more folders the pack does not
    include — `Multiplayer`, `Multiplayer-Compatibility`, `RimHUD`, `EPrimeReadouts`, `MAZ-UI`,
