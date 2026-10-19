@@ -23,12 +23,8 @@
 
 ## Установка вручную
 
-Так тоже можно, но набор обязан совпасть с эталоном сервера до файла, поэтому порядок строгий.
-Актуальные коммиты и теги лежат в манифесте сборки — сервер отдаёт его по пути `/pack`, а его адрес
-уже прописан в моде и в лаунчере.
-
 1. **Игра.** RimWorld **1.6** и пять DLC: Royalty, Ideology, Biotech, Anomaly, Odyssey.
-   Сделайте копию папки игры — ставить сборку в Steam-установку не стоит.
+   Рекомендуем сделать копию папки игры, а не ставить сборку поверх своей Steam-установки.
 2. **Сборка Hardcore SK.** Скачайте архив репозитория по SHA из манифеста
    (`https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/<sha>`) и положите **только** содержимое
    его папки `Mods` в `Mods` вашей копии.
@@ -75,12 +71,8 @@ update. Pack updates are a button in the same window.
 
 ## Installing by hand
 
-Possible, but the set has to match the server's reference exactly, so the order matters. The current
-commits and tags live in the pack manifest, which the server serves at `/pack`; its address is
-already built into the mod and the launcher.
-
 1. **The game.** RimWorld **1.6** with all five DLCs: Royalty, Ideology, Biotech, Anomaly, Odyssey.
-   Copy the game folder — do not install the pack over your Steam copy.
+   We recommend copying the game folder rather than installing the pack over your Steam copy.
 2. **The Hardcore SK pack.** Download the repository archive at the SHA from the manifest
    (`https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/<sha>`) and put **only** the contents of
    its `Mods` folder into your copy's `Mods`.
