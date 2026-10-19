@@ -30,8 +30,10 @@
    на сам манифест, а не на конкретную версию). Скачайте архив репозитория по этому SHA
    (`https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/<sha>`) и положите **только**
    содержимое его папки `Mods` в `Mods` вашей копии.
-3. **Наш мод.** Возьмите архив из верхнего релиза с тегом `v*` и распакуйте так, чтобы папка
-   `HSKMultiplayer` оказалась в `Mods`. В том же архиве едут ещё семь папок, которых нет в сборке, —
+3. **Этот мод.** На [странице релизов](../../releases) возьмите самый верхний релиз мода —
+   версия вида `v0.5.13` (не `launcher-*`, это другое, для лаунчера) — и распакуйте его архив
+   так, чтобы папка `HSKMultiplayer` оказалась в `Mods`. В том же архиве едут ещё семь папок,
+   которых нет в сборке, —
    `Multiplayer`, `Multiplayer-Compatibility`, `RimHUD`, `EPrimeReadouts`, `MAZ-UI`, `QualColor`,
    `TraitRarityColors`: их тоже нужно положить рядом.
 4. **Порядок модов.** `ModsConfig.xml` уже лежит готовым прямо в архиве этого мода
@@ -80,9 +82,10 @@ update. Pack updates are a button in the same window.
    manifest itself, not a pinned version). Download the repository archive at that SHA
    (`https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/<sha>`) and put **only** the
    contents of its `Mods` folder into your copy's `Mods`.
-3. **This mod.** Take the archive from the topmost `v*` release and unpack it so that
-   `HSKMultiplayer` lands in `Mods`. The same archive carries seven more folders the pack does not
-   include — `Multiplayer`, `Multiplayer-Compatibility`, `RimHUD`, `EPrimeReadouts`, `MAZ-UI`,
+3. **This mod.** On the [releases page](../../releases), take the topmost mod release - a
+   version like `v0.5.13` (not `launcher-*`, that's the launcher) - and unpack its archive so
+   that `HSKMultiplayer` lands in `Mods`. The same archive carries seven more folders the pack
+   does not include — `Multiplayer`, `Multiplayer-Compatibility`, `RimHUD`, `EPrimeReadouts`, `MAZ-UI`,
    `QualColor`, `TraitRarityColors` — those go in beside it.
 4. **Mod order.** `ModsConfig.xml` already comes ready-made inside this mod's own archive
    (`HSKMultiplayer/ModsConfig.xml`) — the full list: pack, add-ons and this mod, already in the
