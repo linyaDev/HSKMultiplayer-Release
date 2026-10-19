@@ -1,13 +1,8 @@
 # HSK Multiplayer — релизы
 
-Здесь лежат только собранные версии: сборка мода (теги `v*`) и лаунчер (теги `launcher-*`).
-Исходники не публикуются.
-
 ## Установка: лаунчер
 
-**[Самый свежий релиз лаунчера](../../releases?q=launcher-&expanded=true)** — тег `launcher-*`,
-самый верхний в списке. Ссылка на конкретный файл здесь не висит специально: номер версии меняется
-с каждым релизом, и зашитая в README ссылка на старую версию быстро устаревает — это уже случалось.
+**[Скачать лаунчер](../../releases/latest)** — всегда самый свежий.
 
 Нужен [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime) — без него
 не запустится. Дальше:
@@ -23,15 +18,8 @@
 **Вашу установку Steam он не трогает.** Её можно обновлять и играть в ваниль как раньше — сборка
 живёт отдельной копией.
 
-Обновления лаунчер ставит сам: раз в пять минут спрашивает сервер, есть ли версия новее, и
-предлагает обновиться. Обновления сборки — тоже он, кнопкой.
-
-## Зачем лаунчер вообще нужен
-
-Сервер сверяет набор модов побайтово и не пустит в онлайн того, у кого он отличается хоть одним
-файлом. Официальный лаунчер HSK всегда тянет последний коммит, поэтому двое игроков, обновившихся
-с разницей в час, получают разные файлы и вместе играть уже не смогут. Наш ставит **закреплённые
-коммиты** из манифеста сервера — у всех выходит один и тот же набор.
+Раз в пять минут лаунчер сам проверяет, есть ли версия новее, и предлагает обновиться. Обновления
+сборки — тоже он, кнопкой.
 
 ## Установка вручную
 
@@ -56,14 +44,6 @@
 Если после этого лобби пишет, что моды не совпали, — оно и показывает, какие именно: `missing`,
 `extra`, `different`, `switched`.
 
-## Что нужно
-
-| | |
-|---|---|
-| RimWorld | 1.6 + Royalty, Ideology, Biotech, Anomaly, Odyssey |
-| Multiplayer и Multiplayer Compatibility | уже в архиве, отдельно ставить не нужно |
-| Prepatcher, HugsLib, Harmony | входят в сборку Hardcore SK |
-
 ## Лицензия
 
 Все права защищены, см. [LICENSE](LICENSE). Пользоваться можно; перезаливать, распространять,
@@ -73,14 +53,9 @@
 
 # HSK Multiplayer — releases
 
-Built versions only: the mod bundle (`v*` tags) and the launcher (`launcher-*` tags). The source is
-not published here.
-
 ## Install: the launcher
 
-**[Latest launcher release](../../releases?q=launcher-&expanded=true)** — `launcher-*` tag, the one
-at the top. No direct link to a specific file on purpose: the version number changes with every
-release, and a link to an old version baked into this README goes stale fast - it already has.
+**[Download the launcher](../../releases/latest)** — always the newest one.
 
 It needs the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime).
 Then:
@@ -95,15 +70,8 @@ order and starts the game with its own save folder.
 
 **Your Steam install is left alone** — the pack lives in a separate copy.
 
-The launcher updates itself: every five minutes it asks the server whether a newer version exists
-and offers to update. Pack updates are a button in the same window.
-
-## Why a launcher at all
-
-The server compares mod sets byte for byte and refuses anyone whose set differs by a single file.
-The official HSK launcher always pulls the latest commit, so two players who update an hour apart
-end up with different files and can no longer play together. Ours installs **pinned commits** from
-the server's manifest, so everyone ends up with the same set.
+Every five minutes the launcher checks on its own whether a newer version exists and offers to
+update. Pack updates are a button in the same window.
 
 ## Installing by hand
 
@@ -127,14 +95,6 @@ already built into the mod and the launcher.
 
 If the lobby then says the mods do not match, it also says which ones: `missing`, `extra`,
 `different`, `switched`.
-
-## Requirements
-
-| | |
-|---|---|
-| RimWorld | 1.6 + Royalty, Ideology, Biotech, Anomaly, Odyssey |
-| Multiplayer and Multiplayer Compatibility | already in the archive, no separate install |
-| Prepatcher, HugsLib, Harmony | come with the Hardcore SK pack |
 
 ## License
 
