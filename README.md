@@ -1,4 +1,4 @@
-# HSK Multiplayer — релизы
+# HSK Online Launcher — релизы
 
 ## Установка: лаунчер
 
@@ -46,7 +46,7 @@
 
 ---
 
-# HSK Multiplayer — releases
+# HSK Online Launcher — releases
 
 ## Install: the launcher
 
