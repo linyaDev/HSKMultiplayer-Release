@@ -27,7 +27,8 @@
    Рекомендуем сделать копию папки игры, а не ставить сборку поверх своей Steam-установки.
 2. **Сборка Hardcore SK.** Скачайте архив репозитория:
    [https://github.com/HardcoreSK/Hardcore-SK/archive/98106a39b9eb055952e9163f2836c8f58c68e5e7.zip](https://github.com/HardcoreSK/Hardcore-SK/archive/98106a39b9eb055952e9163f2836c8f58c68e5e7.zip)
-   и положите **только** содержимое его папки `Mods` в `Mods` вашей копии.
+   и положите содержимое его папки `Mods` в `Mods` вашей копии, а содержимое папки
+   `Config` — в `SaveData/Config` (готовые настройки модов пака).
 3. **Этот мод.** [Скачайте последний релиз](https://github.com/linyaDev/HSKOnlain-Release/releases/latest)
    из отдельного репозитория `HSKOnlain-Release` и распакуйте архив прямо в `Mods`.
 4. **Порядок модов.** `ModsConfig.xml` уже лежит готовым прямо в архиве этого мода
@@ -35,7 +36,8 @@
    дописывать ничего не нужно.
 5. **Настройки модов (необязательно).** Скопируйте содержимое
    `HSKMultiplayer/Settings/Config/` из того же архива в `SaveData/Config/` вашей копии.
-6. **Запуск** с отдельной папкой сохранений: `RimWorldWin64.exe -savedatafolder=SaveData`.
+
+Запускайте и приятной игры!
 
 Если после этого лобби пишет, что моды не совпали, — оно и показывает, какие именно: `missing`,
 `extra`, `different`, `switched`.
@@ -75,7 +77,8 @@ update. Pack updates are a button in the same window.
    We recommend copying the game folder rather than installing the pack over your Steam copy.
 2. **The Hardcore SK pack.** Download the repository archive:
    [https://github.com/HardcoreSK/Hardcore-SK/archive/98106a39b9eb055952e9163f2836c8f58c68e5e7.zip](https://github.com/HardcoreSK/Hardcore-SK/archive/98106a39b9eb055952e9163f2836c8f58c68e5e7.zip)
-   and put **only** the contents of its `Mods` folder into your copy's `Mods`.
+   and put the contents of its `Mods` folder into your copy's `Mods`, and the contents of its
+   `Config` folder into `SaveData/Config` (the pack's own ready-made mod settings).
 3. **This mod.** [Download the latest release](https://github.com/linyaDev/HSKOnlain-Release/releases/latest)
    from the separate `HSKOnlain-Release` repo and unpack the archive straight into `Mods`.
 4. **Mod order.** `ModsConfig.xml` already comes ready-made inside this mod's own archive
@@ -83,7 +86,8 @@ update. Pack updates are a button in the same window.
    to append.
 5. **Mod settings (optional).** Copy the contents of `HSKMultiplayer/Settings/Config/` from the
    same archive into your copy's `SaveData/Config/`.
-6. **Run** with a save folder of its own: `RimWorldWin64.exe -savedatafolder=SaveData`.
+
+Launch it and enjoy!
 
 If the lobby then says the mods do not match, it also says which ones: `missing`, `extra`,
 `different`, `switched`.
