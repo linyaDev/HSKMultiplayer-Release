@@ -1,8 +1,5 @@
 # HSK Multiplayer — релизы
 
-Здесь — только релизы лаунчера. Релизы самого мода переехали в отдельный репозиторий —
-[`HSKOnlain-Release`](https://github.com/linyaDev/HSKOnlain-Release).
-
 ## Установка: лаунчер
 
 **[Скачать лаунчер](../../releases/latest)**
@@ -50,9 +47,6 @@
 ---
 
 # HSK Multiplayer — releases
-
-Launcher releases only. The mod's own releases moved to a separate repo —
-[`HSKOnlain-Release`](https://github.com/linyaDev/HSKOnlain-Release).
 
 ## Install: the launcher
 
