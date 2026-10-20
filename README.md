@@ -7,7 +7,7 @@
 Нужен [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime) — без него
 не запустится. Дальше:
 
-1. Распакуйте архив в любую свою папку (пять файлов рядом) и запустите `HSKOnlineLauncher.exe`.
+1. Просто распакуйте архив и запустите `HSKOnlineLauncher.exe`.
 2. Укажите установленный RimWorld — лаунчер проверит версию и наличие DLC.
 3. Нажмите установку и дождитесь конца. После этого играйте **только через лаунчер**.
 
@@ -58,7 +58,7 @@
 It needs the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0/runtime).
 Then:
 
-1. Unpack the archive anywhere (five files side by side) and run `HSKOnlineLauncher.exe`.
+1. Just unpack the archive and run `HSKOnlineLauncher.exe`.
 2. Point it at your RimWorld install — it checks the version and the DLCs.
 3. Press install and wait. From then on, play through the launcher.
 
