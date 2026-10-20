@@ -10,7 +10,8 @@
 1. Просто распакуйте архив и запустите `HSKOnlineLauncher.exe`.
 2. Укажите установленный RimWorld — лаунчер проверит версию и наличие DLC.
 3. Выберите папку, куда поставить отдельную копию RimWorld для игры в онлайн-мод.
-4. Нажмите установку и дождитесь конца. После этого играйте **только через лаунчер**.
+4. Нажмите установку и дождитесь конца. После этого можно нажать «Играть» — получайте
+   удовольствие от игры!
 
 Что он делает: автоматизирует ручную установку и обновление.
 
@@ -59,7 +60,7 @@ Then:
 1. Just unpack the archive and run `HSKOnlineLauncher.exe`.
 2. Point it at your RimWorld install — it checks the version and the DLCs.
 3. Choose a folder where it should put a separate copy of RimWorld for the online mod.
-4. Press install and wait. From then on, play through the launcher.
+4. Press install and wait. Then press Play - enjoy the game!
 
 What it does: automates the manual install and update steps below.
 
