@@ -9,7 +9,8 @@
 
 1. Просто распакуйте архив и запустите `HSKOnlineLauncher.exe`.
 2. Укажите установленный RimWorld — лаунчер проверит версию и наличие DLC.
-3. Нажмите установку и дождитесь конца. После этого играйте **только через лаунчер**.
+3. Выберите папку, куда поставить отдельную копию RimWorld для игры в онлайн-мод.
+4. Нажмите установку и дождитесь конца. После этого играйте **только через лаунчер**.
 
 Что он делает: копирует игру в отдельную папку, ставит туда Hardcore SK по закреплённому коммиту,
 аддоны по их коммитам и наш `HSKMultiplayer` из последнего релиза, пишет порядок модов и запускает
@@ -60,7 +61,8 @@ Then:
 
 1. Just unpack the archive and run `HSKOnlineLauncher.exe`.
 2. Point it at your RimWorld install — it checks the version and the DLCs.
-3. Press install and wait. From then on, play through the launcher.
+3. Choose a folder where it should put a separate copy of RimWorld for the online mod.
+4. Press install and wait. From then on, play through the launcher.
 
 What it does: copies the game into a folder of its own, installs Hardcore SK at a pinned commit, the
 add-ons at their pinned commits and our `HSKMultiplayer` from the latest release, writes the mod
