@@ -33,9 +33,8 @@
 4. **Порядок модов.** `ModsConfig.xml` уже лежит готовым прямо в архиве этого мода
    (`HSKMultiplayer/ModsConfig.xml`). Просто скопируйте его в папку настроек игры —
    дописывать ничего не нужно.
-5. **Настройки модов (необязательно).** Лаунчер раскладывает их сам при установке; вручную —
-   скопируйте содержимое `HSKMultiplayer/Settings/Config/` из того же архива в `SaveData/Config/`
-   вашей копии.
+5. **Настройки модов (необязательно).** Скопируйте содержимое
+   `HSKMultiplayer/Settings/Config/` из того же архива в `SaveData/Config/` вашей копии.
 6. **Запуск** с отдельной папкой сохранений: `RimWorldWin64.exe -savedatafolder=SaveData`.
 
 Если после этого лобби пишет, что моды не совпали, — оно и показывает, какие именно: `missing`,
@@ -82,9 +81,8 @@ update. Pack updates are a button in the same window.
 4. **Mod order.** `ModsConfig.xml` already comes ready-made inside this mod's own archive
    (`HSKMultiplayer/ModsConfig.xml`). Just copy it into the game's config folder - nothing
    to append.
-5. **Mod settings (optional).** The launcher lays these out on its own during install; by hand -
-   copy the contents of `HSKMultiplayer/Settings/Config/` from the same archive into your copy's
-   `SaveData/Config/`.
+5. **Mod settings (optional).** Copy the contents of `HSKMultiplayer/Settings/Config/` from the
+   same archive into your copy's `SaveData/Config/`.
 6. **Run** with a save folder of its own: `RimWorldWin64.exe -savedatafolder=SaveData`.
 
 If the lobby then says the mods do not match, it also says which ones: `missing`, `extra`,
