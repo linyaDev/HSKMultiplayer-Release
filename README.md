@@ -28,18 +28,14 @@
 
 1. **Игра.** RimWorld **1.6** и пять DLC: Royalty, Ideology, Biotech, Anomaly, Odyssey.
    Рекомендуем сделать копию папки игры, а не ставить сборку поверх своей Steam-установки.
-2. **Сборка Hardcore SK.** Скачайте архив репозитория на текущем закреплённом коммите
-   (`https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/98106a39b9eb055952e9163f2836c8f58c68e5e7`)
+2. **Сборка Hardcore SK.** [Скачайте архив репозитория на текущем закреплённом коммите](https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/98106a39b9eb055952e9163f2836c8f58c68e5e7)
    и положите **только** содержимое его папки `Mods` в `Mods` вашей копии.
 3. **Этот мод.** [Скачайте последний релиз](https://github.com/linyaDev/HSKOnlain-Release/releases/latest)
    из отдельного репозитория `HSKOnlain-Release` и распакуйте его архив так, чтобы папка
-   `HSKMultiplayer` оказалась в `Mods`. В том же архиве едут ещё семь папок, которых нет в
-   сборке, —
-   `Multiplayer`, `Multiplayer-Compatibility`, `RimHUD`, `EPrimeReadouts`, `MAZ-UI`, `QualColor`,
-   `TraitRarityColors`: их тоже нужно положить рядом.
+   `HSKMultiplayer` оказалась в `Mods`.
 4. **Порядок модов.** `ModsConfig.xml` уже лежит готовым прямо в архиве этого мода
-   (`HSKMultiplayer/ModsConfig.xml`) — это полный список: сборка, аддоны и сам мод, уже в нужном
-   порядке. Просто скопируйте его в папку настроек игры — дописывать ничего не нужно.
+   (`HSKMultiplayer/ModsConfig.xml`). Просто скопируйте его в папку настроек игры —
+   дописывать ничего не нужно.
 5. **Запуск** с отдельной папкой сохранений: `RimWorldWin64.exe -savedatafolder=SaveData`.
 
 Если после этого лобби пишет, что моды не совпали, — оно и показывает, какие именно: `missing`,
@@ -81,17 +77,14 @@ update. Pack updates are a button in the same window.
 
 1. **The game.** RimWorld **1.6** with all five DLCs: Royalty, Ideology, Biotech, Anomaly, Odyssey.
    We recommend copying the game folder rather than installing the pack over your Steam copy.
-2. **The Hardcore SK pack.** Download the repository archive at the currently pinned commit
-   (`https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/98106a39b9eb055952e9163f2836c8f58c68e5e7`)
+2. **The Hardcore SK pack.** [Download the repository archive at the currently pinned commit](https://codeload.github.com/HardcoreSK/Hardcore-SK/zip/98106a39b9eb055952e9163f2836c8f58c68e5e7)
    and put **only** the contents of its `Mods` folder into your copy's `Mods`.
 3. **This mod.** [Download the latest release](https://github.com/linyaDev/HSKOnlain-Release/releases/latest)
    from the separate `HSKOnlain-Release` repo and unpack its archive so that `HSKMultiplayer`
-   lands in `Mods`. The same archive carries seven more folders the pack does not include —
-   `Multiplayer`, `Multiplayer-Compatibility`, `RimHUD`, `EPrimeReadouts`, `MAZ-UI`,
-   `QualColor`, `TraitRarityColors` — those go in beside it.
+   lands in `Mods`.
 4. **Mod order.** `ModsConfig.xml` already comes ready-made inside this mod's own archive
-   (`HSKMultiplayer/ModsConfig.xml`) — the full list: pack, add-ons and this mod, already in the
-   right order. Just copy it into the game's config folder - nothing to append.
+   (`HSKMultiplayer/ModsConfig.xml`). Just copy it into the game's config folder - nothing
+   to append.
 5. **Run** with a save folder of its own: `RimWorldWin64.exe -savedatafolder=SaveData`.
 
 If the lobby then says the mods do not match, it also says which ones: `missing`, `extra`,
