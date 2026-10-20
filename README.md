@@ -29,12 +29,14 @@
    [https://github.com/HardcoreSK/Hardcore-SK/archive/98106a39b9eb055952e9163f2836c8f58c68e5e7.zip](https://github.com/HardcoreSK/Hardcore-SK/archive/98106a39b9eb055952e9163f2836c8f58c68e5e7.zip)
    и положите **только** содержимое его папки `Mods` в `Mods` вашей копии.
 3. **Этот мод.** [Скачайте последний релиз](https://github.com/linyaDev/HSKOnlain-Release/releases/latest)
-   из отдельного репозитория `HSKOnlain-Release` и распакуйте его архив так, чтобы папка
-   `HSKMultiplayer` оказалась в `Mods`.
+   из отдельного репозитория `HSKOnlain-Release` и распакуйте архив прямо в `Mods`.
 4. **Порядок модов.** `ModsConfig.xml` уже лежит готовым прямо в архиве этого мода
    (`HSKMultiplayer/ModsConfig.xml`). Просто скопируйте его в папку настроек игры —
    дописывать ничего не нужно.
-5. **Запуск** с отдельной папкой сохранений: `RimWorldWin64.exe -savedatafolder=SaveData`.
+5. **Настройки модов (необязательно).** Лаунчер раскладывает их сам при установке; вручную —
+   скопируйте содержимое `HSKMultiplayer/Settings/Config/` из того же архива в `SaveData/Config/`
+   вашей копии.
+6. **Запуск** с отдельной папкой сохранений: `RimWorldWin64.exe -savedatafolder=SaveData`.
 
 Если после этого лобби пишет, что моды не совпали, — оно и показывает, какие именно: `missing`,
 `extra`, `different`, `switched`.
@@ -76,12 +78,14 @@ update. Pack updates are a button in the same window.
    [https://github.com/HardcoreSK/Hardcore-SK/archive/98106a39b9eb055952e9163f2836c8f58c68e5e7.zip](https://github.com/HardcoreSK/Hardcore-SK/archive/98106a39b9eb055952e9163f2836c8f58c68e5e7.zip)
    and put **only** the contents of its `Mods` folder into your copy's `Mods`.
 3. **This mod.** [Download the latest release](https://github.com/linyaDev/HSKOnlain-Release/releases/latest)
-   from the separate `HSKOnlain-Release` repo and unpack its archive so that `HSKMultiplayer`
-   lands in `Mods`.
+   from the separate `HSKOnlain-Release` repo and unpack the archive straight into `Mods`.
 4. **Mod order.** `ModsConfig.xml` already comes ready-made inside this mod's own archive
    (`HSKMultiplayer/ModsConfig.xml`). Just copy it into the game's config folder - nothing
    to append.
-5. **Run** with a save folder of its own: `RimWorldWin64.exe -savedatafolder=SaveData`.
+5. **Mod settings (optional).** The launcher lays these out on its own during install; by hand -
+   copy the contents of `HSKMultiplayer/Settings/Config/` from the same archive into your copy's
+   `SaveData/Config/`.
+6. **Run** with a save folder of its own: `RimWorldWin64.exe -savedatafolder=SaveData`.
 
 If the lobby then says the mods do not match, it also says which ones: `missing`, `extra`,
 `different`, `switched`.
