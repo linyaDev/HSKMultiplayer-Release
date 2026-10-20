@@ -17,8 +17,7 @@
 **Вашу установку Steam он не трогает.** Её можно обновлять и играть в ваниль как раньше — сборка
 живёт отдельной копией.
 
-Раз в пять минут лаунчер сам проверяет, есть ли версия новее, и предлагает обновиться. Обновления
-сборки — тоже он, кнопкой.
+Лаунчер сам проверяет обновления и предлагает их поставить.
 
 ## Установка вручную
 
@@ -66,8 +65,7 @@ What it does: automates the manual install and update steps below.
 
 **Your Steam install is left alone** — the pack lives in a separate copy.
 
-Every five minutes the launcher checks on its own whether a newer version exists and offers to
-update. Pack updates are a button in the same window.
+The launcher checks for updates on its own and offers to install them.
 
 ## Installing by hand
 
