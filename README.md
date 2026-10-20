@@ -12,9 +12,7 @@
 3. Выберите папку, куда поставить отдельную копию RimWorld для игры в онлайн-мод.
 4. Нажмите установку и дождитесь конца. После этого играйте **только через лаунчер**.
 
-Что он делает: копирует игру в отдельную папку, ставит туда Hardcore SK по закреплённому коммиту,
-аддоны по их коммитам и наш `HSKMultiplayer` из последнего релиза, пишет порядок модов и запускает
-игру со своей папкой сохранений.
+Что он делает: автоматизирует ручную установку и обновление.
 
 **Вашу установку Steam он не трогает.** Её можно обновлять и играть в ваниль как раньше — сборка
 живёт отдельной копией.
@@ -64,9 +62,7 @@ Then:
 3. Choose a folder where it should put a separate copy of RimWorld for the online mod.
 4. Press install and wait. From then on, play through the launcher.
 
-What it does: copies the game into a folder of its own, installs Hardcore SK at a pinned commit, the
-add-ons at their pinned commits and our `HSKMultiplayer` from the latest release, writes the mod
-order and starts the game with its own save folder.
+What it does: automates the manual install and update steps below.
 
 **Your Steam install is left alone** — the pack lives in a separate copy.
 
